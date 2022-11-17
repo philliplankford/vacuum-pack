@@ -28,8 +28,13 @@
 
 const fs = require('fs');
 const path = require('path');
-const babylon = require('babylon');
+const babylon = require('babylon'); // web rendering engine
 const traverse = require('babel-traverse').default;
+// Babel is a javascript compiler
+// Babel converts ECMASCRIPT2015+
+// into backwards compatible versions of JavaScript.
+// Babel traverse maintains the files tree state and replaces, removes, and adds nodes
+
 const {transformFromAst} = require('babel-core');
 
 let ID = 0;
